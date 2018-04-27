@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="设计模式," />
 
 
 
@@ -79,13 +79,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lu Zeyan">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="#设计模式–Builder ###概念建造者模式是较为复杂的创建模式，它将客户端与包含多个组成部分（或部件）的复杂对象的创建过程分离。 ###使用场景当构造一个对象需要很多参数的时候，并且参数的个数或者类型不固定的时候 ###UML 结构图分析角色介绍：  Product：它是被构建的复杂对象，包含多个组成部件 Builder：它为创建一个产品 Product 对象的各个部件指定抽象接口 Conc">
+<meta name="keywords" content="设计模式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="设计模式--Builder">
+<meta property="og:url" content="http://yoursite.com/2016/04/29/设计模式-builder构建者/index.html">
 <meta property="og:site_name" content="Lu Zeyan">
+<meta property="og:description" content="#设计模式–Builder ###概念建造者模式是较为复杂的创建模式，它将客户端与包含多个组成部分（或部件）的复杂对象的创建过程分离。 ###使用场景当构造一个对象需要很多参数的时候，并且参数的个数或者类型不固定的时候 ###UML 结构图分析角色介绍：  Product：它是被构建的复杂对象，包含多个组成部件 Builder：它为创建一个产品 Product 对象的各个部件指定抽象接口 Conc">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNc79ly1fqerlx8t2wj30mw0bktcw.jpg">
+<meta property="og:updated_time" content="2018-04-27T09:18:11.197Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lu Zeyan">
+<meta name="twitter:title" content="设计模式--Builder">
+<meta name="twitter:description" content="#设计模式–Builder ###概念建造者模式是较为复杂的创建模式，它将客户端与包含多个组成部分（或部件）的复杂对象的创建过程分离。 ###使用场景当构造一个对象需要很多参数的时候，并且参数的个数或者类型不固定的时候 ###UML 结构图分析角色介绍：  Product：它是被构建的复杂对象，包含多个组成部件 Builder：它为创建一个产品 Product 对象的各个部件指定抽象接口 Conc">
+<meta name="twitter:image" content="https://ws3.sinaimg.cn/large/006tNc79ly1fqerlx8t2wj30mw0bktcw.jpg">
 
 
 
@@ -115,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/04/29/设计模式-builder构建者/"/>
 
 
 
 
 
-  <title>Lu Zeyan</title>
+  <title>设计模式--Builder | Lu Zeyan</title>
   
 
 
@@ -140,8 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +220,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +252,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/04/29/设计模式-builder构建者/" itemprop="url">设计模式--Builder</a></h1>
+          <h1 class="post-title" itemprop="name headline">设计模式--Builder</h1>
         
 
         <div class="post-meta">
@@ -298,9 +302,7 @@
       
 
       
-        
-          
-            <p>#设计模式–Builder</p>
+        <p>#设计模式–Builder</p>
 <p>###概念<br>建造者模式是较为复杂的创建模式，它将客户端与包含多个组成部分（或部件）的复杂对象的创建过程分离。</p>
 <p>###使用场景<br>当构造一个对象需要很多参数的时候，并且参数的个数或者类型不固定的时候</p>
 <p>###UML 结构图分析<br>角色介绍：</p>
@@ -326,8 +328,6 @@
 <li>对象的构建过程暴露</li>
 </ul>
 
-          
-        
       
     </div>
     
@@ -342,197 +342,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/04/27/设计模式-单例/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="loorain">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lu Zeyan">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/04/27/设计模式-单例/" itemprop="url">设计模式-单例</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-27T16:37:43+08:00">
-                2016-04-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="设计模式-单例"><a href="#设计模式-单例" class="headerlink" title="设计模式-单例"></a>设计模式-单例</h1><h3 id="单例介绍"><a href="#单例介绍" class="headerlink" title="单例介绍"></a>单例介绍</h3><p><strong>单例的概念</strong></p>
-<p>单例模式是一种对象创建模式，它用于产生一个对象的具体实例，它可以确保系统中一个类只产生一个实例</p>
-<p><strong>单例的优点</strong></p>
-<ul>
-<li>对于频繁使用的对象，可以省略创建对象所花费的时间，这对于那些重量级对象而言，是非常可观的一笔系统开销</li>
-<li>由于 <code>new</code> 操作的次数减少，因而对系统的使用频率也会降低，这将减轻 GC 压力，缩短 GC 停顿时间</li>
-</ul>
-<h3 id="单例的六种写法和各自特点"><a href="#单例的六种写法和各自特点" class="headerlink" title="单例的六种写法和各自特点"></a>单例的六种写法和各自特点</h3><p><strong>饿汉式</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HungrySingleton</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> HungrySingleton sInstance = <span class="keyword">new</span> HungrySingleton();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">HungrySingleton</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> HungrySingleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> sInstance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>不足之处：</strong>无法对 <code>sInstance</code> 实例做延时加载</p>
-<p><strong>优化：</strong>懒汉</p>
-<p><strong>懒汉式</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LazySingleton</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> LazySingleton sInstance;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">LazySingleton</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> LazySingleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (sInstance == <span class="keyword">null</span>) &#123;</span><br><span class="line">            sInstance = <span class="keyword">new</span> LazySingleton();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sInstance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>不足之处：</strong>在多线程并发下这样的实现是无法保证实例是唯一的</p>
-<p><strong>优化：</strong>懒汉线程安全</p>
-<p><strong>懒汉线程安全</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LazySafetySingleton</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> LazySafetySingleton sInstance;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">LazySafetySingleton</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">//方法中声明 synchronize 关键字</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> LazySafetySingleton <span class="title">getInstance1</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (sInstance == <span class="keyword">null</span>) &#123;</span><br><span class="line">            sInstance = <span class="keyword">new</span> LazySafetySingleton();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sInstance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//同步代码块实现</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> LazySafetySingleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">synchronized</span> (LazySafetySingleton.class) &#123;</span><br><span class="line">            <span class="keyword">if</span> (sInstance == <span class="keyword">null</span>) &#123;</span><br><span class="line">                sInstance = <span class="keyword">new</span> LazySafetySingleton();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sInstance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>不足之处：</strong>性能</p>
-<p><strong>优化：</strong>DCL</p>
-<p><strong>DCL（双检锁机制）</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DCLSingleton</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">volatile</span> DCLSingleton sInstance; </span><br><span class="line">   </span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">DCLSingleton</span><span class="params">()</span></span>&#123;&#125; </span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> DCLSingleton <span class="title">getInstance</span><span class="params">()</span></span>&#123; </span><br><span class="line">        <span class="comment">//避免不必要的同步</span></span><br><span class="line">        <span class="keyword">if</span> (sInstance == <span class="keyword">null</span>) &#123; </span><br><span class="line">            <span class="keyword">synchronized</span> (DCLSingleton.class) &#123; </span><br><span class="line">                <span class="comment">//在第一次调用时初始化</span></span><br><span class="line">                <span class="keyword">if</span> (sInstance == <span class="keyword">null</span>) &#123; </span><br><span class="line">                    sInstance = <span class="keyword">new</span> DCLSingleton(); </span><br><span class="line">                &#125; </span><br><span class="line">            &#125; </span><br><span class="line">        &#125; </span><br><span class="line">        <span class="keyword">return</span> sInstance; </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>不足之处：</strong></p>
-<ul>
-<li>JVM 的即使编译器中存在指令重排序的优化，解决办法是把 <code>DCLSingleton</code> 变量声明为 <code>volatile</code></li>
-</ul>
-<p><strong>优化：</strong></p>
-<ul>
-<li>静态内部类</li>
-<li>枚举</li>
-</ul>
-<blockquote>
-<p><strong>指令重排序</strong></p>
-</blockquote>
-<ul>
-<li>在虚拟机层面，为了尽可能减少内存操作速度远慢于 CPU 运行的所带来的 CPU 空置的影响，虚拟机会按照自己的一些规则将程序编写顺序打乱—即写在后面的代码在时间顺序上可能会先执行，而写在前面的代码会后执行—以尽可能充分利用 CPU。</li>
-<li>在硬件层面，CPU 会将接收到的一批指令按照其规则重排序，同样是基于 CPU 速度比缓存速度快的原因，和上一点的目的类似，只是硬件处理的话，每次只能在接收到的有限指令范围内重排序，而虚拟机可以在更大层面、更多指令范围内重排序。</li>
-</ul>
-<p><strong>静态内部类</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StaticInnerSingleton</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> StaticInnerSingleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> SingletonHolder.INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//静态内部类</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonHolder</span></span>&#123;</span><br><span class="line">        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> StaticInnerSingleton INSTANCE = <span class="keyword">new</span> StaticInnerSingleton();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>优点：</strong></p>
-<ul>
-<li>JVM 本身机制保证了线程安全</li>
-<li>没有 <code>synchronize</code> 的使用保证了性能优势</li>
-<li><code>SingletonHolder</code> 是私有的其他地方没有办法访问</li>
-</ul>
-<p><strong>原因：</strong></p>
-<ul>
-<li>通过 <code>static</code> 进行区块初始化数据，这样就保证对象在内存是独一份的。因为静态内部类只要没有被使用 JVM 虚拟机就不会去加载，也就不会去加载单例对象，这样就完成了懒汉式加载</li>
-<li>使用 <code>final</code> 字段保证字段无法被修改以保证对象的唯一性，所以线程是安全的。      </li>
-</ul>
-<p><strong>枚举</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span>  EnumSingleton &#123;</span><br><span class="line">    <span class="comment">//定义一个枚举元素，它就是 EnumSingleton 的一个实例</span></span><br><span class="line">    INSTANCE;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>优点：</strong></p>
-<ul>
-<li>写法简单</li>
-<li>默认情况下枚举实例的创建时线程安全的，如果要自己添加变量和实例方法一定要注意线程安全</li>
-</ul>
-<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><ul>
-<li>饿汉：无法对 instance 实例进行延迟加载</li>
-<li>懒汉：多线程并发情况下无法保证实例的唯一性</li>
-<li>懒汉线程安全：使用 <code>synchronize</code> 导致性能缺陷</li>
-<li>DCL：JVM 使编译器的指令重排序问题，使用 <code>volatile</code> 关键字</li>
-<li>静态内部 / 枚举：延迟加载 / 线程安全 / 性能优势</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/27/设计模式-单例/" rel="next" title="设计模式-单例">
+                <i class="fa fa-chevron-left"></i> 设计模式-单例
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -542,10 +381,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -553,6 +393,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -758,6 +602,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
