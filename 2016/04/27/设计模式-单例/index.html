@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -84,7 +84,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="设计模式-单例">
 <meta property="og:url" content="http://yoursite.com/2016/04/27/设计模式-单例/index.html">
-<meta property="og:site_name" content="Lu Zeyan">
+<meta property="og:site_name" content="Luzeyan&#39;s Blog">
 <meta property="og:description" content="设计模式-单例单例介绍单例的概念 单例模式是一种对象创建模式，它用于产生一个对象的具体实例，它可以确保系统中一个类只产生一个实例 单例的优点  对于频繁使用的对象，可以省略创建对象所花费的时间，这对于那些重量级对象而言，是非常可观的一笔系统开销 由于 new 操作的次数减少，因而对系统的使用频率也会降低，这将减轻 GC 压力，缩短 GC 停顿时间  单例的六种写法和各自特点饿汉式 12345678">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-04-27T10:16:32.601Z">
@@ -98,7 +98,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -126,7 +126,7 @@
 
 
 
-  <title>设计模式-单例 | Lu Zeyan</title>
+  <title>设计模式-单例 | Luzeyan's Blog</title>
   
 
 
@@ -156,7 +156,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Lu Zeyan</span>
+        <span class="site-title">Luzeyan's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -187,6 +187,26 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
           </a>
         </li>
       
@@ -236,13 +256,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/04/27/设计模式-单例/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="loorain">
+      <meta itemprop="name" content="luzeyan">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lu Zeyan">
+      <meta itemprop="name" content="Luzeyan's Blog">
     </span>
 
     
@@ -432,7 +452,11 @@
           
 
   
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjA5Ni8xMjYzMQ"></div>
+    </div>
 
+  
 
 
         </div>
@@ -468,7 +492,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">loorain</p>
+              <p class="site-author-name" itemprop="name">luzeyan</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -545,25 +569,21 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">loorain</span>
+  <span class="author" itemprop="copyrightHolder">luzeyan</span>
 
   
 </div>
 
-
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
 
 
 
@@ -659,7 +679,6 @@
   <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
 
 
-
   
   
 
@@ -696,6 +715,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
